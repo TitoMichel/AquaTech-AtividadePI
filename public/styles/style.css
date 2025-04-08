@@ -1,0 +1,379 @@
+/* Adicionar aqui toda a estilização criada para sua aplicação. */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+    background-color: black;
+
+}
+
+:root {
+    --tamanho-header: 80px;
+    --tamanho-footer: 65px;
+    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+
+}
+
+.header {
+    height: var(--tamanho-header);
+    border-bottom: 2px solid #32b9cd;
+
+}
+
+.titulo {
+    color: #32b9cd;
+    width: fit-content;
+    font-weight: 500;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+
+}
+
+.header .container {
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    color: #e3b062;
+
+}
+
+.header a {
+    text-decoration: none;
+    color: #e3b062;
+}
+
+.agora {
+    font-weight: 800;
+}
+
+/*BANNER*/
+
+.banner {
+    height: var(--tamanho-banner);
+    color: white;
+    background-image: url("../assets/imgs/home.png");
+    background-size: cover;
+}
+
+.banner .container {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+
+.banner .container p {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+}
+
+.banner .container span {
+    font-weight: 800;
+}
+
+/* MISSÃO VISÃO VALORES*/
+
+.social {
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.social .container .boxes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box img {
+    width: 170px;
+}
+
+.box h4{
+    color: #aa0974
+}
+
+.footer {
+    background-color: #32b9cd;
+    height: var(--tamanho-footer);
+    color: white;
+    display: flex;
+    font-size: 15px;
+
+}
+
+.footer .container {
+    justify-content: center;
+    text-align: center;
+}
+
+.version {
+    font-size: 12px;
+}
+
+/* TELA DE LOGIN */
+
+.login {
+    color: white;
+    height: 100%;
+    justify-content: center;
+    padding: 40px;
+   background:  url(../assets/imgs/home.png);
+    background-size: cover;
+
+}
+
+.login .container {
+    transform: scale(1.05);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 80%;
+    
+}
+
+.login .container button {
+    background-color: #aa0974;
+    color: #f3f3f3;
+    border: solid 2px #aa0974;
+    border-radius: 5px;
+    height: 30px;
+    width: 120px;
+    margin-top: 10px;
+}
+
+.login .container .formulario{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.login .container button:hover {
+    background-color: #ffffff;
+    color: #aa0974;
+    border-color: #aa0974;
+    transform: scale(1.1);
+    transition: ease-in-out 0.5s;
+}
+
+
+
+
+
+
+
+.login .container .formulario{
+    background-color: white;
+}
+
+.login .container .formulario h2{
+    color: #aa0974;
+    font-size: 40px;
+}
+
+
+.login .container .formulario input{
+    width: 80%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+    border-color: #32b9cd;
+}
+
+.login .campo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login .formulario span{
+    color: #8b3e72;
+    font-weight: 800;
+    justify-content: left;
+    margin-left: -620px;
+    
+
+}
+
+
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+#bodyLogin {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+
+}
+
+/* TELA DE CADASTRO*/
+
+.cadastro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 84.5%;
+    color: white;
+    text-align: center;
+    background: url(../assets/imgs/home.png);
+    background-size: cover;
+    
+}
+
+.cadastro .container h2 {
+    color: #8b3e72;
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+
+    
+}
+
+
+
+.cadastro .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(1.05);
+    flex-direction: column;
+    margin-top: 60PX;
+  
+
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px;
+    background-color: white;
+    color: #8b3e72;
+    font-weight: 700;
+    padding: 20px;
+    border-radius: 10px;
+    width: 800px;
+    justify-content: center;
+    
+  }
+
+  .cadastro .formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+  }
+
+  .cadastro .formulario input {
+    width: 95%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+    border-color: #32b9cd;
+    
+  }
+
+.cadastro .campo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+   
+}
+
+
+
+
+.cadastro button {
+    background-color: #aa0974;
+    color: #f3f3f3;
+    border: solid 2px #aa0974;
+    border-radius: 5px;
+    height: 40px;
+    width: 120px;
+    margin-top: 10px;
+}
+
+.cadastro button:hover {
+    background-color: #f7feff;
+    color: #aa0974;
+  border-color: #aa0974;
+    transform: scale(1.1);
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+
+/* SIMULADOR */
+
+
+#bodySimulador{
+    background: linear-gradient(rgba(201, 74, 74, 0.203), rgba(13, 238, 88, 0.21)), url(../assets/imgs/fundo.png);
+    background-size: cover;
+}
+.simulador .container{
+    color: white;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.simulador{
+    height: 84.5%;
+    
+    background-size: cover;
+}
+
+
